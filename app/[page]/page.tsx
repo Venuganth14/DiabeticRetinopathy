@@ -14,6 +14,7 @@ import SocialMediaFloatingButtonGroup from "../../components/button/social-media
 import { PredictionSheet } from "@/components/form/inquiry-form";
 import ClientAuthComponent from "./clientAuth";
 import ImageUploadComponent from "@/components/form/upload";
+import ClientSideComponent from "@/components/form/client-side-component";
 // import DynamicNgrokUrl from "@/components/form/ngrok";
 
 type Props = {
@@ -70,7 +71,7 @@ export default async function MainPage({ params }: Props) {
           <p>{resultMessage}</p>
         </div>
       )}
-
+  <ClientSideComponent />
       <div className="mt-12 text-center">
         <MainTitle
           title1={mainData["main-title1"]}

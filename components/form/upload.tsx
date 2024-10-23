@@ -78,7 +78,7 @@ const ImageUploadComponent = () => {
         const result = await res.json();
         const className = result.class.replace(/^\d+\s*/, '');
         const confidenceScore = (result.confidence_score * 100).toFixed(1);
-        const formattedMessage = `You have been diagnosed with ${className} Diabetic Retinopathy with an accuracy rate of ${confidenceScore}%`;
+        const formattedMessage = `You have been diagnosed with ${className} Diabetic Retinopathy`;
 
         localStorage.setItem('resultMessage', formattedMessage);
 
